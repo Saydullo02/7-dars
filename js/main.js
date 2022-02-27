@@ -7,7 +7,7 @@ var elResult = document.querySelector(".prices__result")
 
 //DEfualt value
 var USD_TO_UZS = 10900;
-var RUB_TO_UZS = 128.26;
+var RUB_TO_UZS = 128;
 var EUR_TO_UZS = 12129;
 
 

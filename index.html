@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>7-dars</title>
 </head>
-<body>
+<body class="bg-success ">
     
     <main>
-        <section class="prices bg-success pt-5 h-100 ">
+        <section class="prices pt-5">
             <div class="container">
                 <h1 class="h1 text-center mb-5">Currency converter</h1>
                 <form class="row prices__form mb-5" action="https://echo.htmlacademy.ru/" method="GET">
                     
                     <div class="col-5">
-                        <div class="input-group mb-3"><input type="number"class=" prices__input form-control p-2" placeholder="Prices" min="0" max="99999999" step="0.1"  required aria-label="user_number" aria-describedby="basic-addon1">
+                        <div class="input-group mb-3">
+                            <input type="number"class=" prices__input form-control p-2" placeholder="Prices" min="0" max="99999999" step="0.1"  required aria-label="user_number" aria-describedby="basic-addon1">
                         </div>
                     </div>
                     
                     <div class="col-5">
-                        <select class="prices__select form-select p-2" aria-label="Default select example" required>
+                        <select class="form-select prices__select p-2" aria-label="Default select example" required>
                             <option selected disabled hidden>CHoose curency</option>
                             <option value="USD">USD</option>
                             <option value="RUB">RUB</option>

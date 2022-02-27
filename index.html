@@ -6,30 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>7-dars</title>
 </head>
 <body>
     
-    <h1 class="visually-hidden"></h1>
-    
-    <header>
-        <div class="container">
-            
-        </div>
-    </header>
-    
     <main>
-        <section class="hero">
+        <section class="prices bg-success pt-5 h-100 ">
             <div class="container">
+                <h1 class="h1 text-center mb-5">Currency converter</h1>
+                <form class="row prices__form mb-5" action="https://echo.htmlacademy.ru/" method="GET">
+                    
+                    <div class="col-5">
+                        <div class="input-group mb-3"><input type="number"class=" prices__input form-control p-2" placeholder="Prices" min="0" max="99999999" step="0.1"  required aria-label="user_number" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    
+                    <div class="col-5">
+                        <select class="prices__select form-select p-2" aria-label="Default select example" required>
+                            <option selected disabled hidden>CHoose curency</option>
+                            <option value="USD">USD</option>
+                            <option value="RUB">RUB</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-2">
+                        <button type="submit" class="btn btn-primary p-2 w-100">Submit</button>
+                    </div>
+                    
+                </form>
                 
+                <div class="alert alert-info text-center h3 prices__result" role="alert">
+                    Result
+                </div>
             </div>
         </section>
-    </main>
+    </main> 
     
-    <footer>
-        
-    </footer>
-    
+    <script src="./js/bootstrap.js"></script>
     <script src="./js/main.js"></script>
     
 </body>
